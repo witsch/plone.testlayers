@@ -4,9 +4,12 @@ Changelog
 1.0a2 - Unreleased
 ------------------
 
+* Fix source distribution by using a `MANIFEST.in`.
+  [witsch]
+
 
 1.0a1 - Released April 23, 2009
 -------------------------------
 
-* Initial release
+* Initial release.
   [witsch]

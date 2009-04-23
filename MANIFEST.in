@@ -1,0 +1,5 @@
+include README.txt
+include docs/*
+recursive-include src *.xml
+recursive-include src *.zcml
+exclude MANIFEST.in
