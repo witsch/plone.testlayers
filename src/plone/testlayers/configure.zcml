@@ -1,0 +1,15 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+    i18n_domain="plone.testlayers">
+
+  <genericsetup:registerProfile
+      name="default"
+      title="plone.testlayers"
+      directory="profiles/default"
+      description='Test profile.'
+      for="Products.CMFPlone.interfaces.ITestCasePloneSiteRoot"
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      />
+
+</configure>
