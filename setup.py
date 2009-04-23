@@ -5,7 +5,7 @@ readme = open("README.txt").read()
 history = open(join('docs', 'HISTORY.txt')).read()
 
 setup(name = 'plone.testlayers',
-      version = '1.0a1',
+      version = '1.0a2',
       description = 'Painless setup of Plone integration test layers',
       long_description = readme[readme.find('\n\n'):] + '\n' + history,
       classifiers = [
