@@ -10,7 +10,7 @@ will conveniently generate a test layer, which will load your packages ZCML
 and install them, apply a `GenericSetup` profile and help you set up sample
 content for speedier testing.
 
-  .. _`plone.testlayers`: http://pypi.python.org/pypi/plone.testlayers
+  .. _`plone.testlayers`: http://github.com/witsch/plone.testlayers/
 
 
 Usage
@@ -41,9 +41,9 @@ your package, somewhat like::
 With that in place you can now set up your individual test cases like::
 
   from unittest import defaultTestLoader
-  from plone.testlayers.tests.base import MyTestCase
+  from collective.foo.tests.base import FooTestCase
 
-  class FooTests(MyTestCase):
+  class FooTests(FooTestCase):
 
       def testFoo(self):
           # the 'foo' object set up in the layer should already exist
