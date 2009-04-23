@@ -1,9 +1,9 @@
 from unittest import defaultTestLoader
-from plone.testlayers.tests.base import MyTestCase
+from plone.testlayers.tests.base import FooTestCase
 from Products.CMFCore.utils import getToolByName
 
 
-class PonyTests(MyTestCase):
+class PonyTests(FooTestCase):
     """ tests to make sure the setup of other packages works """
 
     def testPonyResources(self):

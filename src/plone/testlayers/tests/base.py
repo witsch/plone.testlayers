@@ -11,11 +11,10 @@ def destroy(portal):
     portal.manage_delObjects(ids='foo')
 
 ptc.setupPloneSite()
-MyLayer = makeTestLayer(packages=('plone.testlayers', 'plone.pony'),
-    profile='plone.testlayers:default', create=create, destroy=destroy)
 
 
-class MyTestCase(ptc.PloneTestCase):
+class FooTestCase(ptc.PloneTestCase):
     """ base class for integration tests """
 
-    layer = MyLayer
+    layer = makeTestLayer(packages=('plone.testlayers', 'plone.pony'),
+        profile='plone.testlayers:default', create=create, destroy=destroy)

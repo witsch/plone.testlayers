@@ -1,8 +1,8 @@
 from unittest import defaultTestLoader
-from plone.testlayers.tests.base import MyTestCase
+from plone.testlayers.tests.base import FooTestCase
 
 
-class FooTests(MyTestCase):
+class FooTests(FooTestCase):
 
     def testFoo(self):
         # the 'foo' object set up in the layer should already exist
