@@ -17,4 +17,13 @@ class FooTestCase(ptc.PloneTestCase):
     """ base class for integration tests """
 
     layer = makeTestLayer(packages=('plone.testlayers', 'plone.pony'),
-        profile='plone.testlayers:default', create=create, destroy=destroy)
+        profile='plone.testlayers:default', create=create, destroy=destroy,
+        name='FooLayer')
+
+
+class BarTestCase(ptc.PloneTestCase):
+    """ alternative base class for integration tests """
+
+    layer = makeTestLayer(packages=('plone.testlayers',),
+        profile='plone.testlayers:default', create=create, destroy=destroy,
+        name='BarLayer')

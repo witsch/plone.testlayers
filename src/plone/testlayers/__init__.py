@@ -8,7 +8,7 @@ from Products.CMFCore.utils import getToolByName
 from transaction import commit
 
 
-def makeTestLayer(packages, profile,
+def makeTestLayer(packages, profile, name=None,
         create=None, destroy=None, quiet=True):
     """ generate a layer that will set up a package-specific test
         environment by loading zcml, a genericsetup profile and optionally
@@ -58,5 +58,8 @@ def makeTestLayer(packages, profile,
             # commit the cleanup...
             commit()
             close(root)
+
+    if name is not None:
+        PackageTestLayer.__name__ = name
 
     return PackageTestLayer
