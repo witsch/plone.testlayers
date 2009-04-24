@@ -1,8 +1,8 @@
 Changelog
 =========
 
-1.0a3 - Unreleased
-------------------
+1.0a3 - Released April 24, 2009
+-------------------------------
 
 * Add support for generating multiple test layers.
   [witsch]
